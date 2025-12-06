@@ -2,7 +2,7 @@
     <div>
 		<div class="header header-light" :class="{'header-fixed': scroll}" data-sticky-element="">
 			<div class="container-fluid">
-				<nav id="navigation" :class="windowWidth > 991 ? 'navigation navigation-landscape' : 'navigation navigation-portrait'">
+				<nav id="navigation" :class="windowWidth > 991 ? 'navigation navigation-landscape' : 'navigation navigation-portrait'" >
 					<div class="nav-header">
 						<NuxtLink class="nav-brand" to="/"><img :src="logo" class="logo" alt=""/></NuxtLink>
 						<div class="nav-toggle" @click="toggle = !toggle"></div>
@@ -21,9 +21,9 @@
 						</div>
 					</div>
 					<div class="nav-menus-wrapper" :class="{ 'nav-menus-wrapper-open': toggle}" :style="{'left': toggle ? '0%' : '-100%'}">
-						<div class='mobLogos'>
+						<!-- <div class='mobLogos'>
 							<img :src="logo" class='img-fluid lightLogo' alt='Logo'/>
-						</div>
+						</div> -->
 						<span class="nav-menus-wrapper-close-button" @click="toggle = !toggle">✕</span>
 						<ul class="nav-menu">
 							<!-- <li :class="['/','/home-2','/home-3','/home-4','/home-5','/home-6','/home-7','/home-8','/home-9','/home-10','/home-splash','/home-map'].includes(current) ? 'active' : '' "><router-link to="#">Home<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
@@ -162,7 +162,7 @@
 
 						</ul>
 
-						<ul class="nav-menu nav-menu-social align-to-right mt-2">
+						<ul class="nav-menu nav-menu-social align-to-right" style="margin-top: 34px;">
 							<li>
 								<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#login">
 									<i class="bi bi-person-circle fs-6 me-1"></i>
@@ -336,7 +336,7 @@
 <script setup>
 	import { onMounted, ref } from 'vue'
 	import { useRoute } from 'vue-router'
-	import logo from '@/assets/img/logo.svg'
+	import logo from '@/assets/img/logo-projet.jpeg'
 	import google from '@/assets/img/google.png'
 	import facebook from '@/assets/img/facebook.png'
 	import brand1 from '@/assets/img/brand/logo-1.png'

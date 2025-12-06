@@ -4925,13 +4925,13 @@ nav a:hover {
 }
 
 .nav-menu>li>a {
-  padding: 18px 12px 10px;
+  padding: 38px 12px 10px;
   display: inline-block;
   transition: color .3s, background .3s;
   font-weight: 600;
   letter-spacing: 0.2px;
   text-transform: capitalize;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1;
 }
 
@@ -5288,7 +5288,7 @@ nav a {
 .header {
   background: var(--bs-body-bg);
   position: relative;
-  padding: 13px 0;
+  padding: 1px 0;
   z-index: 999;
   transition: all 0.8s ease !important;
 }
@@ -5385,7 +5385,8 @@ nav a {
 }
 
 .nav-brand img {
-  width: 166px;
+  width: 100px;
+  height: 100px;
   position: relative;
 }
 
