@@ -162,7 +162,7 @@
 
 						</ul>
 
-						<ul class="nav-menu nav-menu-social align-to-right" style="margin-top: 34px;">
+						<ul class="nav-menu nav-menu-social align-to-right" style="margin-top: 32px;">
 							<li>
 								<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#login">
 									<i class="bi bi-person-circle fs-6 me-1"></i>

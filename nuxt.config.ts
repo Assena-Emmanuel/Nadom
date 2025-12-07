@@ -8,14 +8,32 @@ export default defineNuxtConfig({
 
   modules: ['@nuxtjs/i18n'],
 
+  // i18n: {
+  //   locales: [
+  //     { code: 'en', name: 'English', file: 'en.json' },
+  //     { code: 'fr', name: 'Français', file: 'fr.json' }
+  //   ],
+  //   defaultLocale: 'fr',
+
+    
+  //   vueI18n: './i18n/i18n.config.ts'  // ⚠ Chemin vers ton fichier de config
+  // },
+
   i18n: {
     locales: [
-      { code: 'en', name: 'English', file: 'en.json' },
-      { code: 'fr', name: 'Français', file: 'fr.json' }
+      { code: 'en', file: 'en.json' },
+      { code: 'fr', file: 'fr.json' },
     ],
     defaultLocale: 'fr',
-    
-    vueI18n: './i18n/i18n.config.ts'  // ⚠ Chemin vers ton fichier de config
+    strategy: 'no_prefix',
+    langDir: 'locales/',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_preferred_lang',
+      redirectOn: 'root',
+      fallbackLocale: 'fr'
+    },
+    vueI18n: './i18n.config.ts',
   },
 
 
