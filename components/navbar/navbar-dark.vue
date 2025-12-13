@@ -4,7 +4,7 @@
 			<div class="container-fluid">
 				<nav id="navigation" :class="windowWidth > 991 ? 'navigation navigation-landscape' : 'navigation navigation-portrait'" >
 					<div class="nav-header">
-						<NuxtLink class="nav-brand" to="/"><img :src="logo" class="logo" alt=""/></NuxtLink>
+						<NuxtLink class="nav-brand" to="/"><img :src="logo" class="logo" alt=""/><span class="nadom-title ">Nadom</span></NuxtLink>
 						<div class="nav-toggle" @click="toggle = !toggle"></div>
 						<div class="mobile_nav">
 							<ul>
@@ -63,7 +63,7 @@
 
 							<li :class="current === '/about-us' ? 'active' : ''"><NuxtLink to="/about-us">{{ $t('about_us') }}</NuxtLink></li> 
 
-							<li :class="current === '/contact-us' ? 'active' : ''"><NuxtLink to="/contact-us">{{ $t('Testimonials') }}</NuxtLink></li>
+							<li :class="current === '/contact-us' ? 'active' : ''"><NuxtLink to="/contact-us">{{ $t('testimonials') }}</NuxtLink></li>
 
 
 							<li :class="current === '/contact-us' ? 'active' : ''"><NuxtLink to="/contact-us">{{ $t('contacts') }}</NuxtLink></li>
@@ -162,15 +162,57 @@
 
 						</ul>
 
-						<ul class="nav-menu nav-menu-social align-to-right" style="margin-top: 32px;">
-							<li>
+						<ul class="nav-menu nav-menu-social align-to-right" style="margin-top: 15px;">
+							<!-- <li>
 								<a href="#" class="d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#login">
 									<i class="bi bi-person-circle fs-6 me-1"></i>
 									<span class="navCl"><span>{{ $t('signup') }}</span></span>
 								</a>
-								</li>
+							</li> -->
 
-								<li class="dropdown">
+							<li class="dropdown language-selector">
+								<a href="#"
+								class="dropdown-toggle d-flex align-items-center gap-2 lang-btn"
+								data-bs-toggle="dropdown">
+									{{ $i18n.locale === 'en' ? '🇺🇸' : '🇫🇷' }}
+									{{ $i18n.locale.toUpperCase() }}
+								</a>
+
+								<ul class="dropdown-menu lang-menu">
+									<li>
+										<a class="dropdown-item d-flex align-items-center gap-2 lang-item"
+										@click.prevent="$i18n.locale = 'en'">
+											🇺🇸 English
+										</a>
+									</li>
+
+									<li>
+										<a class="dropdown-item d-flex align-items-center gap-2 lang-item"
+										@click.prevent="$i18n.locale = 'fr'">
+											🇫🇷 Français
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							<span class="auth-buttons d-flex align-items-center gap-2">
+
+								<!-- Login -->
+								<NuxtLink class="btn-auth btn-login" to="/login">
+									<i class="bi bi-box-arrow-in-right me-1"></i>
+									{{ $t('signin') }}
+								</NuxtLink>
+
+								<!-- Register -->
+								<NuxtLink class="btn-auth btn-register" to="/register">
+									<i class="bi bi-person-plus me-1"></i>
+									{{ $t('signup') }}
+								</NuxtLink>
+
+							</span>
+
+
+							<!-- <li class="dropdown">
 								<a href="#" class="dropdown-toggle" data-bs-toggle="dropdown">
 									🌐 {{ $i18n.locale.toUpperCase() }}
 								</a>
@@ -183,7 +225,11 @@
 									<a class="dropdown-item" @click.prevent="$i18n.locale = 'fr'">Français</a>
 									</li>
 								</ul>
-							</li>
+							</li> -->
+
+							
+
+
 
 
 							<!-- <li>

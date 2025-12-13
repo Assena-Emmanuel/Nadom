@@ -1,7 +1,11 @@
 <template>
     <div class="row align-items-center justify-content-center">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-            <Swiper class="categorySlider"
+            <div class="categorySlider d-flex justify-content-center gap-5">
+                <div v-appear="'fade-up'" v-for="(item, index) in [1, 2, 3]" :key="index" style="width: 450px; height: 500px; background-color: brown; border-radius: 10px;">{{ item }}</div>
+
+            </div>
+            <!-- <Swiper class="categorySlider"
                 :space-between="'15px'"
                 :slides-per-view="6"
                 :loop="true"
@@ -26,7 +30,7 @@
                         </NuxtLink>
                     </div>	
                 </SwiperSlide>
-            </Swiper>
+            </Swiper> -->
         </div>
     </div>
 </template>

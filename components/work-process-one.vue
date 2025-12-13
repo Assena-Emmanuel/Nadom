@@ -1,18 +1,65 @@
 <template>
-    <section class="position-relative" style="background-color:#fff5ed;">
-        <div class="container">
-            <div class="row align-items-center justify-content-between g-4">
+    <section class="text-center position-relative" style="background-color:#fff5ed; margin-top: 100px;" id="etude">
+        <div class="">
                 
-                <div class="col-xl-5 col-lg-5 col-md-6">
-                    <img :src="app" class="img-fluid" alt="Image">
-                </div>
-                
-                <div class="col-xl-6 col-lg-6 col-md-6">
-                    <div class="workingCaption">
-                        <div class="workingDescribe mb-lg-5 mb-4">
-                            <h3 class="fw-semibold lh-base">Explore ListingHub Working Process Step By Step with Easy Way.</h3>
-                            <p class="lead">In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content still not being ready.</p>
+                <div class="position-absolute w-100 d-flex justify-content-center" style="top: -80px; left: 50%; transform: translateX(-50%);">
+
+                    <div class="mx-auto" style="background-color: #fff5ed; height: 500px; width: 1100px; opacity: 0.95; border-radius: 0 0 10px 10px;">
+
+                        <div class="secHeading-wrap text-center pt-5 fade-up" ref="studiesRef">
+    
+                            <!-- Titre principal moderne -->
+                            <h2 class="sectionHeading fw-bold mb-3" style="font-size: 34px;">
+                                <span class="text-primary">{{ $t('studies_in_china') }}</span>
+                            </h2>
+
+                            <!-- Sous-texte -->
+                            <p class="lead fs-5 mb-4" style="max-width: 700px; margin: 0 auto; font-size: 18px;">
+                                Nous vous accompagnons de l’orientation jusqu’à l’arrivée sur le campus,
+                                avec un suivi complet et professionnel.
+                            </p>
+
+                            <!-- Liste des avantages --> 
+                            <div class="mt-4 mb-4" style="max-width: 650px; margin: 0 auto;">
+                                <ul class="list-unstyled fs-5 text-start mx-auto d-inline-block">
+                                    <li class="mb-2">✔️ Inscription dans les universités chinoises</li>
+                                    <li class="mb-2">✔️ Assistance Visa Étudiant</li>
+                                    <li class="mb-2">✔️ Préparation du dossier et traduction</li>
+                                    <li class="mb-2">✔️ Accueil à l'aéroport + installation</li>
+                                </ul>
+                            </div>
+
+                            <!-- Boutons CTA -->
+                            <div class="d-flex justify-content-center gap-3 mt-3">
+
+                                <NuxtLink 
+                                    to="/etudes" 
+                                    class="btn btn-primary px-4 py-2 fw-semibold"
+                                    style="background: linear-gradient(90deg, #662E63, #9E595F, #B5720F); border: none; font-size: 17px;"
+                                >
+                                    Découvrir les universités
+                                </NuxtLink>
+
+                                <NuxtLink 
+                                    to="/contact" 
+                                    class="btn btn-outline-dark px-4 py-2 fw-semibold"
+                                    style="font-size: 17px;"
+                                >
+                                    Faire évaluer mon dossier
+                                </NuxtLink>
+
+                            </div>
                         </div>
+
+
+                    </div>
+
+                </div>
+
+                
+                <!-- <div class="">
+                    <div class="workingCaption">
+                        
                         <div class="workingDemo mb-lg-5 mb-4">
                             <div class="row align-items-center justify-content-center g-3">
                                 <div class="col-xl-8 col-lg-8 col-md-8">
@@ -37,13 +84,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             
             </div>
-        </div>
     </section>
 </template>
 
 <script setup>
-    import app from '@/assets/img/app.svg'
+    import etude from '@/assets/img/index/etude.jpg'
 </script>

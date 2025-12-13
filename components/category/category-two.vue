@@ -1,7 +1,45 @@
 <template>
     <div class="row align-items-center justify-content-center">
-        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-            <Swiper class="owl-carousel categorySlider"
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
+            <div v-appear="'fade-up'" class="d-flex justify-content-center gap-5">
+                <div class="category-small-wrapper">
+                    <NuxtLink to="#" class="categoryBox border border-primary">
+                        
+                        <div class="categoryCapstions">
+                            <div class="catsIcons"><div class="icoBoxx"><i class="bi bi-cash-stack me-1"></i></div></div>
+                            <div class="catsTitle"><h5>{{ $t('supplier_payment') }}</h5></div>
+                            <div class="CatsLists"><span class="categorycounter">+</span></div>
+                        </div>
+                        <!-- <img :src="item.image" class="img-fluid" alt=""/> -->
+                    </NuxtLink>
+                </div>	
+
+                <div class="category-small-wrapper">
+                    <NuxtLink to="#" class="categoryBox border border-primary">
+                        
+                        <div class="categoryCapstions">
+                            <div class="catsIcons"><div class="icoBoxx"><i class="bi bi-arrow-left-right me-1"></i></div></div>
+                            <div class="catsTitle"><h5>{{ $t('money_transfers') }}</h5></div>
+                            <div class="CatsLists"><span class="categorycounter">+</span></div>
+                        </div>
+                        <!-- <img :src="item.image" class="img-fluid" alt=""/> -->
+                    </NuxtLink>
+                </div>	
+
+                <div class="category-small-wrapper">
+                    <NuxtLink to="#" class="categoryBox border border-primary">
+                        
+                        <div class="categoryCapstions">
+                            <div class="catsIcons"><div class="icoBoxx"><i class="bi bi-box-seam me-1"></i></div></div>
+                            <div class="catsTitle"><h5> {{ $t('package_reception') }}</h5></div>
+                            <div class="CatsLists"><span class="categorycounter">+</span></div>
+                        </div>
+                        <!-- <img :src="item.image" class="img-fluid" alt=""/> -->
+                    </NuxtLink>
+                </div>	
+            </div>
+
+            <!-- <Swiper class="owl-carousel categorySlider"
                 :space-between="'15px'"
                 :slides-per-view="6"
                 :loop="true"
@@ -17,7 +55,7 @@
                 <SwiperSlide v-for="(item, index) in categoryData" :key="index" class="singleCategory">
                     <div class="category-small-wrapper">
                         <NuxtLink to="#" class="categoryBox">
-                            <!-- <div class="overlay"></div> -->
+                            
                             <div class="categoryCapstions">
                                 <div class="catsIcons"><div class="icoBoxx"><i :class="item.icon"></i></div></div>
                                 <div class="catsTitle"><h5>{{item.title}}</h5></div>
@@ -27,7 +65,7 @@
                         </NuxtLink>
                     </div>	
                 </SwiperSlide>
-            </Swiper>
+            </Swiper> -->
         </div>
     </div>
 </template>

@@ -4925,7 +4925,7 @@ nav a:hover {
 }
 
 .nav-menu>li>a {
-  padding: 38px 12px 10px;
+  padding: 22px 12px 10px;
   display: inline-block;
   transition: color .3s, background .3s;
   font-weight: 600;
@@ -5385,8 +5385,8 @@ nav a {
 }
 
 .nav-brand img {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   position: relative;
 }
 
@@ -6910,8 +6910,8 @@ ListingHub Elements Styles
   background-color: var(--bs-body-bg);
   border-radius: 0.5rem;
   padding: 20px 20px;
-  width: 100%;
-  height: 230px;
+  width: 400px;
+  height: 530px;
   margin: 0 auto;
   text-align: center;
   color: var(--bs-white);
@@ -7078,7 +7078,7 @@ ListingHub Elements Styles
   border-radius: 0.5rem;
   padding: 20px 20px;
   width: 100%;
-  height: 230px;
+  height: 530px;
   margin: 0 auto;
   text-align: center;
   color: var(--bs-white);
@@ -10670,7 +10670,7 @@ Responsiveness Start
   }
 
   .nav-brand img {
-    max-width: 110px;
+    max-width: 100px;
     position: relative;
   }
 
@@ -10858,3 +10858,204 @@ Responsiveness Start
 .vel-icon.icon{
   font-size: 28px;
 } 
+
+
+
+/*------------------------------*/
+
+.auth-buttons .btn-auth {
+    padding: 6px 16px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+}
+
+.btn-login {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #000;
+}
+
+.btn-login:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 3px 12px rgba(255, 255, 255, 0.4);
+}
+
+.btn-register {
+    background: #B5720F;
+    border: 2px solid #9E595F;
+    color: #fff;
+}
+
+.btn-register:hover {
+    background: #9E595F;
+    border-color: #B5720F;
+    color: #fff;
+    box-shadow: 0 3px 12px rgba(255, 84, 0, 0.4);
+}
+
+// Langue 
+/* Bouton principal */
+.lang-btn {
+    padding: 6px 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.lang-btn:hover {
+    border-color: #999;
+    background: #f7f7f7;
+}
+
+/* Menu dropdown */
+.lang-menu {
+    border: 2px solid #ddd !important;
+    border-radius: 10px;
+    padding: 6px 0;
+}
+
+/* Chaque item */
+.lang-item {
+    padding: 8px 16px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s ease;
+}
+
+.lang-item:last-child {
+    border-bottom: none;
+}
+
+.lang-item:hover {
+    background: #f0f0f0;
+}
+
+.nadom-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #662E63, #9E595F, #B5720F);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-color1{
+  color: #662E63;
+}
+
+.text-color2{
+  color: #9E595F;
+}
+
+.text-color3{
+  color:#B5720F;
+}
+
+
+.services-subtitle {
+  margin-top: 20px;
+}
+
+.services-cards {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.card-item {
+  padding: 10px 18px;
+  background: linear-gradient(90deg, #662E63, #9E595F, #B5720F);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.12);
+  transition: transform .2s ease;
+}
+
+.card-item:hover {
+  transform: translateY(-4px);
+}
+
+.subtitle {
+  font-size: 17px;
+  color: #444;
+  font-weight: 500;
+}
+
+
+// ----------------------
+.actions-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.btn-gradient,
+.btn-outline {
+  padding: 16px 48px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.2rem; /* 🔥 texte plus grand */
+  font-family: 'Poppins', sans-serif; /* 🔥 nouvelle police */
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.subtexte{
+  font-size: 1.2rem; /* 🔥 texte plus grand */
+  font-family: 'Poppins', sans-serif; /* 🔥 nouvelle police */
+}
+
+/* Bouton dégradé */
+.btn-gradient {
+  color: #fff;
+  background: linear-gradient(90deg, #662E63, #9E595F, #B5720F);
+  border: 1px solid #fff;
+}
+
+.btn-gradient:hover {
+  opacity: 0.85;
+  background: linear-gradient(90deg,#B5720F, #9E595F,  #662E63 );
+  transform: translateY(-3px);
+}
+
+/* Bouton outline */
+.btn-outline {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #fff;
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+// -----------
+.icons-row {
+  display: flex;
+  justify-content: center;  /* centre horizontalement */
+  align-items: center;      /* aligne verticalement */
+  gap: 40px;                /* espace entre les images */
+  margin-top: 30px;
+}
+
+.icons-row img {
+  width: 100%;   /* taille des icônes */
+  height: auto;
+}
+
+#etude{
+  background-image: url('assets/img/index/etude.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}

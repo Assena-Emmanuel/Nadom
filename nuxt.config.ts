@@ -33,7 +33,7 @@ export default defineNuxtConfig({
       redirectOn: 'root',
       fallbackLocale: 'fr'
     },
-    vueI18n: './i18n.config.ts',
+    vueI18n: './i18n/i18n.config.ts',
   },
 
 

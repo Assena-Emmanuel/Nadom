@@ -56,6 +56,11 @@
                 </div>
                 <CategoryOne/>
             </div>
+
+            <!-- <div v-appear="'fade-up'">Hello</div>
+<div v-appear="'fade-left'">Je viens de la gauche</div>
+<div v-appear="'zoom-in'">Zoom</div> -->
+
         </section>
 
         <section>

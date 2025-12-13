@@ -1,5 +1,6 @@
 {
-  "signup": "Inscription / Connexion",
+  "signup": "Inscription",
+  "signin": "Connexion",
   "studies_in_china": "Études en Chine",
   "home": "Accueil",
   "our_services": "Nos services",
@@ -8,8 +9,30 @@
   "package_reception": "Réception & vérification de colis",
   "import_export": "Import-Export",
   "tourist_guide": "Guide Touristique",
+  "tourism": "Tourisme",
   "visa_administrative": "Visa & formalité administrative",
   "about_us": "À Propos",
   "testimonials": "Témoignages",
-  "contacts": "Contacts"
+  "contacts": "Contacts",
+  "contactsus": "Contactez-nous",
+  "ourservices": "Nos Services",
+  "learnmore": "En savoir plus",
+  "visa_description_idex": "Nous vous accompagnons dans toutes les démarches pour obir votre visa et gérer vos formalités administratives.",
+      "visaItems": [
+        {
+          "title": "demande_visa",
+          "text": "Nous vous guidons dans le processus de demande de visa pour chaque pays.",
+          "icon": "bi bi-card-checklist"
+        },
+        {
+          "title": "documents",
+          "text": "Vérification et préparation des documents nécessaires.",
+          "icon": "bi bi-file-earmark-text"
+        },
+        {
+          "title": "suivi_formalites",
+          "text": "Assistance dans le suivi des formalités administratives.",
+          "icon": "bi bi-clock-history"
+        }
+      ]
 }
