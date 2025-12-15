@@ -43,7 +43,7 @@
 								</ul>
 							</li> -->
 
-							<li :class="current === '/home-5' ? 'active' : ''"><NuxtLink to="/home-5">{{ $t('home') }}</NuxtLink></li>
+							<li :class="current === '/' ? 'active' : ''"><NuxtLink to="/">{{ $t('home') }}</NuxtLink></li>
 
 							<li :class="['/dashboard-user','/dashboard-my-profile','/dashboard-my-bookings','/dashboard-my-listings','/dashboard-bookmarks','/dashboard-messages','/dashboard-reviews','/dashboard-wallet','/dashboard-add-listing'].includes(current) ? 'active' : ''"><router-link to="#">{{ $t('our_services') }}<span class="submenu-indicator"><span class="submenu-indicator-chevron"></span></span></router-link>
 								<ul class="nav-dropdown nav-submenu">
@@ -55,7 +55,7 @@
 
 							<li :class="current === '/contact-us' ? 'active' : ''"><NuxtLink to="/contact-us">{{ $t('studies_in_china') }}</NuxtLink></li>
 
-							<li :class="current === '/contact-us' ? 'active' : ''"><NuxtLink to="/contact-us">{{ $t('import_export') }}</NuxtLink></li>
+							<li :class="current === '/contact-us' ? 'active' : ''"><NuxtLink to="/import-export">{{ $t('import_export') }}</NuxtLink></li>
 
 							<li :class="current === '/home-map' ? 'active' : ''"><NuxtLink to="/home-map">{{ $t('tourist_guide') }}</NuxtLink></li>
 

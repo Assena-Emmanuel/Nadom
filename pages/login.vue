@@ -7,7 +7,7 @@
                         <div class="col-xl-5 col-lg-7 col-md-9">
                             <div class="authWrap">
                                 <div class="authhead">
-                                    <div class="text-center mb-4"><NuxtLink to="/"><img class="img-fluid" :src="logo" width="55" alt="logo"/></NuxtLink></div>
+                                    <div class="text-center mb-4"><NuxtLink to="/"><img class="img-fluid" :src="logo" width="150" alt="logo"/></NuxtLink></div>
                                 </div>
 
                                 <div class="authbody d-black mb-4">
@@ -90,7 +90,7 @@
 
 <script setup>
 import bg from '@/assets/img/auth-bg.png'
-import logo from '@/assets/img/icon.png'
+import logo from '@/assets/img/index/logo-sansbg.png'
 </script>
 
 <style lang="scss" scoped></style>

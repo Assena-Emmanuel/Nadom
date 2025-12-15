@@ -1,44 +1,42 @@
 <template>
   <section id="visa" class="visa-section py-5">
     <div class="container">
-      
-      <!-- Titre -->
+
+      <!-- Titre + accroche -->
       <div class="row mb-4">
         <div class="col text-center">
           <h2 class="fw-bold">{{ $t('visa_administrative') }}</h2>
-          <p class="text-muted mt-2">
-            {{ $t('visa_description') }}
-          </p>
+          <p class="text-muted mt-2">{{ $t('visa_description') }}</p>
         </div>
       </div>
 
-      <!-- Cards / Étapes -->
-      <div class="row g-4">
-        <div
-          v-for="(item, index) in visaItems"
-          :key="index"
-          class="col-md-6 col-lg-4"
-        >
-          <div class="visa-card h-100 p-4 text-center">
-            <i :class="item.icon" class="visa-icon mb-3"></i>
-            <h5 class="fw-semibold mb-2">{{ $t(item.title) }}</h5>
-            <p class="text-muted small mb-0">{{ $t(item.text) }}</p>
-          </div>
+      <!-- Bloc explicatif -->
+      <div class="row align-items-center g-4">
+        <!-- Image illustrative -->
+        <div class="col-md-6">
+          <img
+    src="assets/img/index/visa.jpg"
+    alt="Passeport et voyage"
+    class="img-fluid rounded shadow"
+  />
         </div>
-      </div>
 
-      <!-- CTA -->
-      <div class="row mt-5">
-        <div class="col text-center">
-          <NuxtLink to="/contact-us" class="btn btn-primary btn-lg">
-            {{ $t('contactsus') }}
-          </NuxtLink>
+        <!-- Texte d'accompagnement -->
+        <div class="col-md-6">
+          <h5 class="fw-semibold mb-3">{{ $t('we_guide_you') }}</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2 fs-5"><i class="bi bi-check-circle-fill text-primary me-2"></i>{{ $t('assist_visa_request') }}</li>
+            <li class="mb-2 fs-5"><i class="bi bi-check-circle-fill text-primary me-2"></i>{{ $t('prepare_documents') }}</li>
+            <li class="mb-2 fs-5"><i class="bi bi-check-circle-fill text-primary me-2"></i>{{ $t('handle_admin_formalities') }}</li>
+          </ul>
+          <NuxtLink to="/contact-us" class="btn btn-primary mt-3">{{ $t('learnmore') }}</NuxtLink>
         </div>
       </div>
 
     </div>
   </section>
 </template>
+
 
 <script setup>
 import {ref} from "vue"
@@ -67,7 +65,7 @@ const visaItems= ref([
 <style scoped lang="scss">
 .visa-section {
   background-color: #f9f9f9;
-  padding-top: 6rem;
+  padding-top: 9rem;
   padding-bottom: 6rem;
 }
 

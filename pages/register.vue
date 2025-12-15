@@ -8,17 +8,17 @@
                         <div class="col-xl-5 col-lg-7 col-md-9">
                             <div class="authWrap">
                                 <div class="authhead">
-                                    <div class="text-center mb-4"><NuxtLink to="/"><img class="img-fluid" :src="logo" width="55" alt="logo"/></NuxtLink></div>
+                                    <div class="text-center mb-3"><NuxtLink to="/"><img class="img-fluid" :src="logo" width="120" alt="logo"/></NuxtLink></div>
                                 </div>
 
                                 <div class="authbody d-black mb-4">
-                                    <div class="card rounded-4 p-sm-5 p-4">
+                                    <div class="card rounded-4 p-sm-5 p-3">
                                         <div class="card-body p-0">
                                             <div class="text-center">
                                                 <h1 class="mb-2 fs-2">Create An Account!</h1>
                                             </div>
-                                            <form class="mt-5 text-start">
-                                                <div class="form mb-5">
+                                            <form class="mt-4 text-start">
+                                                <div class="form mb-4">
                                                     <div class="form-group form-border">
                                                         <label class="form-label">User or Email</label>
                                                         <input type="email" class="form-control" placeholder="name@example.com">
@@ -54,7 +54,7 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="prixer my-5">
+                                                <div class="prixer my-4">
                                                     <div class="devider-wraps position-relative">
                                                         <div class="devider-text text-muted text-md">Or Signup with</div>
                                                     </div>
@@ -97,7 +97,7 @@
 
 <script setup>
     import bg from '@/assets/img/auth-bg.png'
-    import logo from '@/assets/img/icon.png'
+    import logo from '@/assets/img/index/logo-sansbg.png'
 </script>
 
 <style lang="scss" scoped></style>

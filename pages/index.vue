@@ -1,50 +1,54 @@
 <template>
     <div>
         <ClientOnly>
-            <NavbarDark/>
+            <NavbarDark />
         </ClientOnly>
 
-        <div class="image-cover hero-header position-relative" :style="{ background: `url(${bg}) no-repeat`, backgroundSize: 'cover' }" data-overlay="6">
+        <div class="image-cover hero-header full-height position-relative" :style="{backgroundImage:`url(${bg})`}" data-overlay="6">
             <div class="container">
-                <div class="row justify-content-center align-items-center mb-5 mt-lg-0 mt-5">
+                <div class="row justify-content-center align-items-center mb-5 mt-lg-0 mt-0">
                     <div class="col-xl-10 col-lg-11 col-md-12 col-sm-12">
                         <div class="position-relative text-center">
-                            <h1>Acheter, étudier et séjourner en chine avec notre expertise</h1>
-                            <p class="subtitle">etudes, Commerce, visa : nous simplifions votre projet chinois</p>
+                            <h1 style="font-size: 5.2em;">Acheter, étudier et séjourner en chine avec notre expertise</h1>
+                            <p class="subtexte">etudes, Commerce, visa : nous simplifions votre projet chinois</p>
+
                         </div>
                     </div>
                 </div>
-                
-                <div class="row align-items-start justify-content-center mb-lg-5 mb-4">
-                    <div class="col-xl-11 col-lg-12 col-md-12 col-sm-12">
-                        <FormOne/>
+                <div>
+                    <div class="actions-wrapper">
+                        <!-- Bouton 1 -->
+                        <NuxtLink 
+                            to="/login" 
+                            class="btn-gradient"
+                            v-appear="'fade-up'"
+                        >
+                            {{ $t('ourservices') }}
+                        </NuxtLink>
+
+                        <!-- Bouton 2 -->
+                        <NuxtLink 
+                            to="/login" 
+                            class="btn-outline"
+                            v-appear="'fade-up'"
+                        >
+                            {{ $t('contactsus') }}
+                        </NuxtLink>
                     </div>
+
                 </div>
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-12 mb-2">
-                        <div class="text-center"><h6 class="fw-semibold">Explore Popular Categories</h6></div>
-                    </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-md-12 col-12">
-                        <div class="popularSearches d-flex align-items-center justify-content-center column-gap-3 row-gap-1 flex-wrap">
-                            <div class="singleItem"><NuxtLink to="#" class="badge badge-transparent rounded-pill">Real Estate</NuxtLink></div>	
-                            <div class="singleItem"><NuxtLink to="#" class="badge badge-transparent rounded-pill">Eat & Drink</NuxtLink></div>	
-                            <div class="singleItem"><NuxtLink to="#" class="badge badge-transparent rounded-pill">Shopping</NuxtLink></div>	
-                            <div class="singleItem"><NuxtLink to="#" class="badge badge-transparent rounded-pill">Nightlife</NuxtLink></div>	
-                            <div class="singleItem"><NuxtLink to="#" class="badge badge-transparent rounded-pill">Services</NuxtLink></div>	
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-7 col-lg-8 col-md-11 col-sm-12">
+                        <div class="d-block position-relative">
+                            <!-- <PopularSearchOne/> -->
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mousedrop z-1"><a href="#mains" class="mousewheel"><i class="bi bi-mouse"></i></a></div>
+            <div class="mousedrop z-1"><a href="#mains" class="mousewheel center"><i class="bi bi-mouse"></i></a></div>
         </div>
 
-        <section class="py-4 pb-0">
-            <div class="container">
-                <BrandSlider/>
-            </div>
-        </section>
-
-        <section class="pb-0" id="mains">
+        <section class="pb-0">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-12">
@@ -54,72 +58,139 @@
                         </div>
                     </div>
                 </div>
-                <CategoryOne/>
+                <CategoryTwo :elements="services" :height="'500px'" :width="'450px'" />
             </div>
-
-            <!-- <div v-appear="'fade-up'">Hello</div>
-<div v-appear="'fade-left'">Je viens de la gauche</div>
-<div v-appear="'zoom-in'">Zoom</div> -->
-
         </section>
 
-        <section>
-            <div class="container">
+
+        
+
+        <section style="background-color: #E9CFA0; margin: 13em 0px 15em 0px;">
+            <div class="container-fluid" >
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-12">
                         <div class="secHeading-wrap text-center">
-                            <h3 class="sectionHeading">Trending & Popular <span class="text-primary">Listings</span></h3>
+                            <h2 class="sectionHeading fw-bold mb-3" style="font-size: 34px;">
+                                <span class="text-primary">{{ $t('tourism') }}</span>
+                            </h2>
                             <p>Explore Hot & Popular Business Listings</p>
                         </div>
                     </div>
                 </div>
-                <PopularListingOne/>
+                <FeatureProductTwo/>
             </div>
         </section>
 
+        <!-- Etude en chine -->
+        <WorkProcessOne/>
         
+
+
+        <!-- Import export -->
+        <Importexport/>
+
+        
+        <!-- Visa -->
+        <Visa/>
+
+        <!-- <section>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-7 col-lg-8 col-md-11 col-sm-12">
+                        <div class="secHeading-wrap text-center">
+                            <h3 class="sectionHeading">Choose Your <span class="text-primary">Package</span></h3>
+                            <p>Find & Select a perfect & suitable package for your choice.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center mb-4">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mb-4">
+                        <div class="d-flex align-items-center justify-content-between gap-4 p-3 bg-light-primary border border-primary flex-wrap gap-3 rounded-3">
+                            <div class="freeprcIcon">
+                                <div class="freeprcBocses d-flex align-items-center justify-content-start gap-3">
+                                    <div class="freeprcFirst"><span class="square--60 bg-primary text-light circle"><i class="bi bi-patch-check-fill h-auto fs-4"></i></span></div>
+                                    <div class="freeprcInfo">
+                                        <h5 class="fw-semibold lh-base mb-0">Free Account</h5>
+                                        <p class="lh-base mb-0">Choose free account valid for 3 listings</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="freeprcAccount mob-100">
+                                <button type="button" class="btn btn-md btn-whites rounded-pill fw-medium mob-100">Free Listing<i class="bi bi-arrow-right ms-2"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <PricingOne/>  
+            </div>
+        </section> -->
+
         <section class="bg-light">
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-12">
                         <div class="secHeading-wrap text-center">
-                            <h3 class="sectionHeading">Our Great <span class="text-primary">Reviews</span></h3>
-                            <p>Our cliens love our services and give great & positive reviews</p>
+                            <h3 class="sectionHeading"><span class="text-primary">{{ $t('temoignages_title') }}</span></h3>
+                            <p>{{ $t('temoignages_description') }}</p>
                         </div>
                     </div>
                 </div>
-               <ClientOne/>
+                <ClientOne/>
             </div>
         </section>
 
-        <section>
+        <!-- <section>
             <div class="container">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-7 col-lg-8 col-md-11 col-sm-12">
                         <div class="secHeading-wrap text-center">
-                            <h3 class="sectionHeading">Latest Updates <span class="text-primary">News</span></h3>
-                            <p>Join ListingHub and get latest & trending updates about listing</p>
+                            <h3 class="sectionHeading">Explore Upcoming <span class="text-primary">Events</span></h3>
+                            <p>Browse our upcoming events and join soon.</p>
                         </div>
                     </div>
                 </div>
-                <BlogOne/>
+                <EventOne/>
             </div>
-        </section>
-
+        </section> -->
         <FooterTop/>
-
         <FooterOne/>
-
         <BackToTop/>
     </div>
 </template>
 
 <script setup>
-import bg from "@/assets/img/banner-1.jpg"
-import PopularListingOne from '@/components/listing/popular-listing-one.vue'
+    import { onMounted } from 'vue';
+    import bg from '@/assets/img/banner-4.jpg'
+    import FeatureProductTwo from '@/components/listing/feature-product-two.vue';
+    import PopularSearchOne from '@/components/listing/popular-search-one.vue';
+    onMounted(() => {
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+        tooltipTriggerList.forEach((tooltipTriggerEl) => {
+            new window.bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    });
+
+    const services = ref([
+        {
+            icon: 'bi bi-cash-stack me-1',
+            title: 'supplier_payment',
+            list: '+',
+            image: null
+        },
+        {
+            icon: 'bi bi-arrow-left-right me-1',
+            title: 'money_transfers',
+            list: '+',
+            image: null
+        },
+        {
+            icon: 'bi bi-box-seam me-1',
+            title: 'package_reception',
+            list: '+',
+            image: null
+        }
+        ]
+    )
 
 </script>
-
-<style lang="scss" scoped>
-
-</style>

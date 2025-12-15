@@ -17,22 +17,11 @@
   "contactsus": "Contactez-nous",
   "ourservices": "Nos Services",
   "learnmore": "En savoir plus",
-  "visa_description_idex": "Nous vous accompagnons dans toutes les démarches pour obir votre visa et gérer vos formalités administratives.",
-      "visaItems": [
-        {
-          "title": "demande_visa",
-          "text": "Nous vous guidons dans le processus de demande de visa pour chaque pays.",
-          "icon": "bi bi-card-checklist"
-        },
-        {
-          "title": "documents",
-          "text": "Vérification et préparation des documents nécessaires.",
-          "icon": "bi bi-file-earmark-text"
-        },
-        {
-          "title": "suivi_formalites",
-          "text": "Assistance dans le suivi des formalités administratives.",
-          "icon": "bi bi-clock-history"
-        }
-      ]
+  "visa_description": "Nous vous accompagnons dans toutes les démarches pour obtenir votre visa et gérer vos formalités administratives.",
+  "we_guide_you": "Notre accompagnement comprend",
+  "assist_visa_request": "Assistance complète pour la demande de visa.",
+  "prepare_documents": "Préparation et vérification de tous les documents nécessaires.",
+  "handle_admin_formalities": "Gestion des formalités administratives liées au voyage.",
+  "temoignages_title": "Ils nous ont fait confiance",
+  "temoignages_description": "Découvrez les avis de nos clients satisfaits."
 }
