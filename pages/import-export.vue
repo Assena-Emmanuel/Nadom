@@ -79,19 +79,7 @@
                     </div>
                 </section>
                 
-                <!-- <div class="row align-items-start justify-content-center mb-lg-5 mb-4 position-absolute" style="left: 50%; transform: translateX(-50%);">
-                    <div >
-                        <FormOne/>
-                    </div>
-                </div> -->
-
-                <!-- <div class="row justify-content-center align-items-center">
-                    <div class="col-xl-7 col-lg-8 col-md-11 col-sm-12">
-                        <div class="d-block position-absolute">
-                            <PopularSearchOne/>
-                        </div>
-                    </div>
-                </div> -->
+            
             </div>
             <!-- <div class="mousedrop z-1"><a href="#mains" class="mousewheel center"><i class="bi bi-mouse"></i></a></div> -->
         </div>
@@ -101,9 +89,12 @@
         <CategoryTwo/>
 
         <section class="services">
-            <h2 class="section-title">Nos Services</h2>
+            <!-- <h2 class="section-title">Nos Services</h2> -->
+             <h2 class="sectionHeading fw-bold mb-3" style="font-size: 34px; padding: 0 0 1.2em 0;">
+                <span class="text-primary">{{ $t('our_services') }}</span>
+            </h2>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" v-appear="'zoom-in'">
                     <div class="service-icon">📦</div>
                     <h3>Logistique Internationale</h3>
                     <p>Gestion complète de vos expéditions avec suivi en temps réel et optimisation des coûts de transport</p>
@@ -351,7 +342,7 @@
 <style>
     .services {
             max-width: 1400px;
-            margin: 16rem auto;
+            margin: 12rem auto;
             padding: 0 2rem;
         }
 
@@ -367,15 +358,15 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 2rem;
         }
 
         .service-card {
-            background: rgba(30, 41, 59, 0.5);
-            border: 1px solid rgba(148, 163, 184, 0.1);
-            border-radius: 20px;
-            padding: 2.5rem;
+            background: #ffffff;
+            border: 1px solid #94a3b8;
+            border-radius: 0 0 50px 0;
+            padding: 2.0rem;
             transition: all 0.3s;
             backdrop-filter: blur(10px);
         }
@@ -389,7 +380,8 @@
         .service-icon {
             width: 70px;
             height: 70px;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            background: var(--bs-primary-bg-subtle);
+            /* linear-gradient(135deg, #3b82f6, #8b5cf6); */
             border-radius: 15px;
             display: flex;
             align-items: center;
@@ -401,7 +393,7 @@
         .service-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: #e2e8f0;
+            color: #000000;
         }
 
         .service-card p {

@@ -1,7 +1,7 @@
 <template>
     <div class="row d-flex align-items-center justify-content-center ">
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
-            <Swiper class="owl-carousel categorySlider d-flex align-items-center justify-content-center"
+            <Swiper class="owl-carousel categorySlider"
                 :space-between="'15px'"
                 :slides-per-view="6"
                 :loop="true"
@@ -10,8 +10,7 @@
                     320: { slidesPerView: 1 },
                     576: { slidesPerView: 2 },
                     768: { slidesPerView: 3 },
-                    992: { slidesPerView: 4 },
-                    1200: { slidesPerView: 6 }
+                    
                     }"
             >
                 <SwiperSlide v-for="(item, index) in elements" :key="index" class="singleCategory">
@@ -58,8 +57,9 @@
 
 
 <script setup lang="ts">
-import { Swiper, SwiperSlide } from 'swiper/vue'
-import { Autoplay } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Autoplay  } from 'swiper/modules';
+import 'swiper/css';
 
 import 'swiper/css'
 

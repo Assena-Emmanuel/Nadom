@@ -23,7 +23,13 @@
           class="col-md-6 col-lg-3"
         >
           <div class="service-card h-100 text-center p-4">
-            <i :class="item.icon" class="service-icon mb-3"></i>
+            <div class="catsIcons">
+              <div class="icoBoxx">
+                  <i :class="item.icon"></i>
+                  <!-- <i :class="item.icon" class="service-icon mb-3"></i> -->
+              </div>
+            </div>
+            
             <h6 class="fw-semibold mb-2">
               {{ t(item.title) }}
             </h6>
@@ -147,11 +153,28 @@ const items = [
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
+  border: 2px solid var(--bs-primary);
 }
 
 .service-card:hover {
   transform: translateY(-6px);
 }
+
+.icoBoxx {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    margin: 1rem auto;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2.2rem;
+    background: var(--bs-primary-bg-subtle);
+    color: var(--bs-primary);
+    transition: 0.3s;
+    z-index: 11;
+    position: relative;
+  }
 
 .service-icon {
   font-size: 2.3rem;

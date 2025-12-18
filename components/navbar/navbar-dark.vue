@@ -53,9 +53,9 @@
 								</ul>
 							</li>
 
-							<li :class="current === '/contact-us' ? 'active' : ''"><NuxtLink to="/contact-us">{{ $t('studies_in_china') }}</NuxtLink></li>
+							<li :class="current === '/etude-chine' ? 'active' : ''"><NuxtLink to="/etude-chine">{{ $t('studies_in_china') }}</NuxtLink></li>
 
-							<li :class="current === '/contact-us' ? 'active' : ''"><NuxtLink to="/import-export">{{ $t('import_export') }}</NuxtLink></li>
+							<li :class="current === '/import-export' ? 'active' : ''"><NuxtLink to="/import-export">{{ $t('import_export') }}</NuxtLink></li>
 
 							<li :class="current === '/home-map' ? 'active' : ''"><NuxtLink to="/home-map">{{ $t('tourist_guide') }}</NuxtLink></li>
 

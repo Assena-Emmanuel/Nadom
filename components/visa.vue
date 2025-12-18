@@ -1,11 +1,13 @@
 <template>
   <section id="visa" class="visa-section py-5">
-    <div class="container">
+    <div class="container" style="margin-top: 10em; margin-bottom: 6em;">
 
       <!-- Titre + accroche -->
       <div class="row mb-4">
         <div class="col text-center">
-          <h2 class="fw-bold">{{ $t('visa_administrative') }}</h2>
+          <h2 class="sectionHeading fw-bold mb-3" style="font-size: 34px;">
+              <span class="text-primary">{{ $t('visa_administrative') }}</span>
+          </h2>
           <p class="text-muted mt-2">{{ $t('visa_description') }}</p>
         </div>
       </div>
@@ -64,8 +66,8 @@ const visaItems= ref([
 
 <style scoped lang="scss">
 .visa-section {
-  background-color: #f9f9f9;
-  padding-top: 9rem;
+  background-color: #ffffff;
+  padding-top: 16rem;
   padding-bottom: 6rem;
 }
 

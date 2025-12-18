@@ -58,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <CategoryTwo :elements="services" :height="'500px'" :width="'450px'" />
+                <CategoryTwo :elements="services" :height="'400px'" :width="'350px'" />
             </div>
         </section>
 
