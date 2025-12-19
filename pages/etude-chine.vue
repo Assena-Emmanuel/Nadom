@@ -97,9 +97,9 @@ import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 
 const images = ref([
-  '/assets/img/index/etudeenchine1.jpg',
-  '/assets/img/index/etudeenchine2.jpg',
-  '/assets/img/index/etudeenchine3.jpg'
+  'assets/img/index/etudeenchine1.jpg',
+  'assets/img/index/etudeenchine2.jpg',
+  'assets/img/index/etudeenchine3.jpg'
 ])
 
 const reasons = ref([
