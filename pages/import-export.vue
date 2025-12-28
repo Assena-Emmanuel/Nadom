@@ -85,7 +85,7 @@
         </div>
 
         
-
+        
         <CategoryTwo/>
 
         <section class="services">
@@ -98,55 +98,94 @@
                     <div class="service-icon">📦</div>
                     <h3>Logistique Internationale</h3>
                     <p>Gestion complète de vos expéditions avec suivi en temps réel et optimisation des coûts de transport</p>
+                    <div class="learn-more ">
+                        <span style="border: 1px solid #ccc; padding: 3px 10px; border-radius: 6px; background-color: #c99a0b; ">
+                            <a href="" class="text-white">Plus +</a>
+                        </span>
+                    </div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📋</div>
                     <h3>Formalités Douanières</h3>
                     <p>Expertise en réglementation douanière pour faciliter le passage de vos marchandises aux frontières</p>
+                    <div class="learn-more ">
+                        <span style="border: 1px solid #ccc; padding: 3px 10px; border-radius: 6px; background-color: #c99a0b; ">
+                            <a href="" class="text-white">Plus +</a>
+                        </span>
+                    </div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🤝</div>
                     <h3>Sourcing & Partenariats</h3>
                     <p>Identification de fournisseurs fiables et négociation de contrats avantageux sur les marchés internationaux</p>
+                    <div class="learn-more ">
+                        <span style="border: 1px solid #ccc; padding: 3px 10px; border-radius: 6px; background-color: #c99a0b; ">
+                            <a href="" class="text-white">Plus +</a>
+                        </span>
+                    </div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">💼</div>
                     <h3>Conseil Stratégique</h3>
                     <p>Accompagnement personnalisé pour développer votre stratégie d'expansion commerciale internationale</p>
+                    <div class="learn-more ">
+                        <span style="border: 1px solid #ccc; padding: 3px 10px; border-radius: 6px; background-color: #c99a0b; ">
+                            <a href="" class="text-white">Plus +</a>
+                        </span>
+                    </div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🔒</div>
                     <h3>Assurance & Conformité</h3>
                     <p>Protection de vos marchandises et conformité aux normes internationales de qualité et sécurité</p>
+                    <div class="learn-more ">
+                        <span style="border: 1px solid #ccc; padding: 3px 10px; border-radius: 6px; background-color: #c99a0b; ">
+                            <a href="" class="text-white">Plus +</a>
+                        </span>
+                    </div>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📊</div>
                     <h3>Analyse de Marché</h3>
                     <p>Études approfondies des tendances et opportunités sur vos marchés cibles à l'international</p>
+                    <div class="learn-more ">
+                        <span style="border: 1px solid #ccc; padding: 3px 10px; border-radius: 6px; background-color: #c99a0b; ">
+                            <a href="" class="text-white">Plus +</a>
+                        </span>
+                    </div>
                 </div>
             </div>
+        </section>
+        <section class="stats-section">
+            <div class="overlay"></div>
+          <div class="stats-content pb-5">
+            <h2>Nadom conseil en quelques chiffres</h2>
+
+            <div class="stats-grid">
+            <div class="stat">
+                <span class="number">210</span>
+                <span class="label">Pays Desservis</span>
+            </div>
+
+            <div class="stat">
+                <span class="number">5000+</span>
+                <span class="label">Clients satisfaits</span>
+            </div>
+
+            <div class="stat">
+                <span class="number">27/7</span>
+                <span class="label">Support Client</span>
+            </div>
+
+            <div class="stat">
+                <span class="number">10</span>
+                <span class="label">Années d'expertise</span>
+            </div>
+            </div>
+        </div>
         </section>
 
-        <section class="stats">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h4>150+</h4>
-                    <p>Pays Desservis</p>
-                </div>
-                <div class="stat-item">
-                    <h4>5000+</h4>
-                    <p>Clients Satisfaits</p>
-                </div>
-                <div class="stat-item">
-                    <h4>98%</h4>
-                    <p>Livraisons Réussies</p>
-                </div>
-                <div class="stat-item">
-                    <h4>24/7</h4>
-                    <p>Support Client</p>
-                </div>
-            </div>
-        </section>
+        
     </div>
 </template>
 
@@ -621,4 +660,85 @@
         }
 
 
+/* partie carte du monde avec des chiffres */
+.stats-section {
+  position: relative;
+  height: 500px;
+  background-image: url(https://daxueconseil.fr/wp-content/uploads/2021/03/world-map.jpg);
+  background-position: top right;
+  background-size: cover;
+  padding: 80px 20px;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.stats-content {
+  position: relative;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  z-index: 1;
+}
+
+.stats-content h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.stat .number {
+  font-size: 64px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.stat .label {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+@media (max-width: 992px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat .number {
+    font-size: 48px;
+  }
+}
+
+.learn-more {
+  position: absolute;
+  bottom: 20px;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%) translateY(56px);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.service-card:hover .learn-more {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
 </style>

@@ -1,31 +1,37 @@
 <template>
-  <section id="visa" class="visa-section py-5">
-    <div class="container" style="margin-top: 10em; margin-bottom: 6em;">
+  <section class="py-5">
+    <div class="container" style="margin-top: 6em; margin-bottom: 6em;">
 
       <!-- Titre + accroche -->
-      <div class="row mb-4">
-        <div class="col text-center">
-          <h2 class="sectionHeading fw-bold mb-3" style="font-size: 34px;">
+      <div class="mb-4">
+        <div class="secHeading-wrap text-center">
+            <h2 class="sectionHeading fw-bold mb-3">
               <span class="text-primary">{{ $t('visa_administrative') }}</span>
           </h2>
           <p class="text-muted mt-2">{{ $t('visa_description') }}</p>
         </div>
+        <!-- <div class="text-center">
+          <h2 class="sectionHeading fw-bold mb-3">
+              <span class="text-primary">{{ $t('visa_administrative') }}</span>
+          </h2>
+          <p class="text-muted mt-2">{{ $t('visa_description') }}</p>
+        </div> -->
       </div>
 
       <!-- Bloc explicatif -->
-      <div class="row align-items-center g-4">
+      <div class="row align-items-center g-5">
         <!-- Image illustrative -->
-        <div class="col-md-6">
-          <img
-    src="assets/img/index/visa.jpg"
-    alt="Passeport et voyage"
-    class="img-fluid rounded shadow"
-  />
+        <div class="col-md-6 u-image img-fluid ">
+          <!-- <img
+            src="assets/img/index/visa.jpg"
+            alt="Passeport et voyage"
+            class="img-fluid rounded shadow"
+          /> -->
         </div>
 
         <!-- Texte d'accompagnement -->
         <div class="col-md-6">
-          <h5 class="fw-semibold mb-3">{{ $t('we_guide_you') }}</h5>
+          <h2 class="sub" style="margin-top: -20px;">{{ $t('we_guide_you') }}</h2>
           <ul class="list-unstyled">
             <li class="mb-2 fs-5"><i class="bi bi-check-circle-fill text-primary me-2"></i>{{ $t('assist_visa_request') }}</li>
             <li class="mb-2 fs-5"><i class="bi bi-check-circle-fill text-primary me-2"></i>{{ $t('prepare_documents') }}</li>
@@ -65,34 +71,25 @@ const visaItems= ref([
 </script>
 
 <style scoped lang="scss">
-.visa-section {
-  background-color: #ffffff;
-  padding-top: 16rem;
-  padding-bottom: 6rem;
+
+.u-image {
+    min-height: 535px;
+    background-repeat: no-repeat;
+    background-image: url(assets/img/index/visa.jpg);
+    background-size: cover;
+    border-radius: 0 0 50px 0;
+    background-attachment: fixed;
+    background-position: 50% -10.7241vh;
+
 }
 
-.visa-card {
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.sub{
+    font-size: 2.5rem;
+    line-height: 1.1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
 }
 
-.visa-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
-
-.visa-icon {
-  font-size: 2.5rem;
-  color: #0d6efd;
-}
-
-/* Responsive adjustments */
-@media (max-width: 767px) {
-  .visa-section {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-}
 </style>

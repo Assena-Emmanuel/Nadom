@@ -9,18 +9,18 @@
                         <div class="secHeading-wrap text-center pt-5 fade-up" ref="studiesRef">
     
                             <!-- Titre principal moderne -->
-                            <h2 class="sectionHeading fw-bold mb-3" style="font-size: 34px;">
+                            <h2 class="sectionHeading fw-bold mb-3">
                                 <span class="text-primary">{{ $t('studies_in_china') }}</span>
                             </h2>
 
                             <!-- Sous-texte -->
-                            <p class="lead fs-5 mb-4" style="max-width: 700px; margin: 0 auto; font-size: 18px;">
+                            <p v-appear="'zoom-in'" class="lead fs-5 mb-4" style="max-width: 700px; margin: 0 auto; font-size: 18px;">
                                 Nous vous accompagnons de l’orientation jusqu’à l’arrivée sur le campus,
                                 avec un suivi complet et professionnel.
                             </p>
 
                             <!-- Liste des avantages --> 
-                            <div class="mt-4 mb-4" style="max-width: 650px; margin: 0 auto;">
+                            <div v-appear="'zoom-in'" class="mt-4 mb-4" style="max-width: 650px; margin: 0 auto;">
                                 <ul class="list-unstyled fs-5 text-start mx-auto d-inline-block">
                                     <li class="mb-2">✔️ Inscription dans les universités chinoises</li>
                                     <li class="mb-2">✔️ Assistance Visa Étudiant</li>
@@ -30,7 +30,7 @@
                             </div>
 
                             <!-- Boutons CTA -->
-                            <div class="d-flex justify-content-center gap-3 mt-3">
+                            <div v-appear="'fade-up'" class="d-flex justify-content-center gap-3 mt-3">
 
                                 <NuxtLink 
                                     to="/etudes" 

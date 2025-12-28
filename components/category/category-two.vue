@@ -42,6 +42,8 @@
                             <div class="CatsLists">
                             <span class="categorycounter">{{ item.list }}</span>
                             </div>
+
+                            
                         </div>
 
                         </NuxtLink>

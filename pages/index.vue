@@ -58,6 +58,10 @@
                         </div>
                     </div>
                 </div>
+                <!-- <div class="title-wrapper">
+                <h2>Daxue Etudes de marché en Chine</h2>
+                </div> -->
+
                 <CategoryTwo :elements="services" :height="'400px'" :width="'350px'" />
             </div>
         </section>
@@ -163,7 +167,9 @@
     import { onMounted } from 'vue';
     import bg from '@/assets/img/banner-4.jpg'
     import FeatureProductTwo from '@/components/listing/feature-product-two.vue';
-    import PopularSearchOne from '@/components/listing/popular-search-one.vue';
+    import img1 from "@/assets/img/index/1.png"
+    import img2 from "@/assets/img/index/2.png"
+    import img3 from "@/assets/img/index/3.png"
     onMounted(() => {
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
         tooltipTriggerList.forEach((tooltipTriggerEl) => {
@@ -176,21 +182,56 @@
             icon: 'bi bi-cash-stack me-1',
             title: 'supplier_payment',
             list: '+',
-            image: null
+            image: img1
         },
         {
             icon: 'bi bi-arrow-left-right me-1',
             title: 'money_transfers',
             list: '+',
-            image: null
+            image: img2
         },
         {
             icon: 'bi bi-box-seam me-1',
             title: 'package_reception',
             list: '+',
-            image: null
+            image: img3
         }
         ]
     )
 
 </script>
+
+<style>
+    .title-wrapper h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #1f4ea3;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 18px;
+}
+
+/* Trait gris (long) */
+.title-wrapper h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+/* Trait bleu (court) */
+.title-wrapper h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 80px;
+  height: 3px;
+  background-color: #1f4ea3;
+}
+
+
+</style>

@@ -267,15 +267,23 @@ blockquote {
 blockquote:not(:last-child) {
   margin-bottom: 1.04em;
 }
-
+.subsectionHeading{
+  font-size: 3rem;
+    line-height: 1.1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+}
 .secHeading-wrap {
   position: relative;
   margin-bottom: 3rem;
 
   .sectionHeading {
     position: relative;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 500;
+    font-family: Montserrat, sans-serif;
     display: inline-block;
 
     &:before {
@@ -283,7 +291,6 @@ blockquote:not(:last-child) {
       position: absolute;
       width: 40px;
       height: 40px;
-      background: url(../img/herbs.svg);
       background-size: cover;
       object-fit: cover;
       top: -15px;

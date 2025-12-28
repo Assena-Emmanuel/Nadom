@@ -8,15 +8,15 @@
       <div class="row mb-5">
         <div class="secHeading-wrap text-center">
             <!-- Titre principal moderne -->
-            <h2 class="sectionHeading fw-bold mb-3" style="font-size: 45px;">
-                <span class="text-white">{{ t('title') }}</span>
+            <h2 class="sectionHeading fw-bold mb-3" >
+                <span class="text-primary">{{ t('title') }}</span>
             </h2>
             <p class="text-white">{{ t('description') }}</p>
         </div>
       </div>
 
       <!-- Cards -->
-      <div class="row g-4">
+      <div v-appear="'zoom-in'" class="row g-4">
         <div
           v-for="(item, index) in items"
           :key="index"
@@ -41,12 +41,10 @@
       </div>
 
       <!-- CTA -->
-      <div class="row mt-5">
-        <div class="col text-center">
-          <NuxtLink to="/contact-us" class="btn btn-primary btn-lg">
-            {{ t('cta') }}
-          </NuxtLink>
-        </div>
+      <div v-appear="'fade-up'" class="mt-5 text-center">
+        <NuxtLink to="/contact-us" class="btn btn-primary btn-lg">
+          {{ t('cta') }}
+        </NuxtLink>
       </div>
 
     </div>
